@@ -17,7 +17,7 @@ public class DiceTest {
     @Test
     public void testSide()
     {
-        Dice diceFive = new Dice(5, "Blue");
+        Dice diceFive = new Dice(5, "Black");
         assertEquals(5, diceFive.getSides());
     }
 

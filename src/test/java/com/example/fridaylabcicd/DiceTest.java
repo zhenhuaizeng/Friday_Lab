@@ -34,4 +34,17 @@ public class DiceTest {
         Dice diceOne = new Dice(12, "Yellow");
         assertEquals("A 12 sided die", diceOne.toString());
     }
+
+    @Test
+    public void rollManyTest()
+    {
+        int times = 8;
+        Dice manyDice = new Dice(5,"Green");
+        int[] rollsHistory = manyDice.rollMany(times);
+        assertEquals(times, rollsHistory.length);
+
+        for (int i = 0; i < times; i++) {
+            assertTrue(rollsHistory[i] >= 0 && rollsHistory[i] <= 6);
+        }
+    }
 }

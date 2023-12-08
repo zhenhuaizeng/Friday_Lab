@@ -24,8 +24,8 @@ public class DiceTest {
     @Test
     public void getColorTest()
     {
-        Dice diceThree = new Dice(3, "Green");
-        assertEquals("Green", diceThree.getColor());
+        Dice diceThree = new Dice(3, "Blue");
+        assertEquals("Blue", diceThree.getColor());
     }
 
     @Test
